@@ -30,13 +30,13 @@ export default defineConfig({
     
     // All requests we send go to this API endpoint.
     baseURL: 'https://api.openweathermap.org/data/2.5/weather',
-    extraHTTPHeaders: {
-      // We set this header per GitHub guidelines.
-      // 'Accept': 'application/vnd.github.v3+json',
-      // Add authorization token to all requests.
-      // Assuming personal access token available in the environment.
-      'Authorization': `token ${process.env.OPENWEATHER_API_TOKEN}`,
-    },
+    // extraHTTPHeaders: {
+    //   // We set this header per GitHub guidelines.
+    //   // 'Accept': 'application/vnd.github.v3+json',
+    //   // Add authorization token to all requests.
+    //   // Assuming personal access token available in the environment.
+    //   'Authorization': `token ${process.env.OPENWEATHER_API_TOKEN}`,
+    // },
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
